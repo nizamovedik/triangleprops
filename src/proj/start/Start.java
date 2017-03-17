@@ -20,8 +20,17 @@ System.out.println("Введите целые числа");
 			int	c = sc.nextInt();
 			
 			MyTriangle tr = new MyTriangle();
-			if (tr.isCorrectTriangle(a, b, c))
-				System.out.println("" + a + b + c);
+			
+			if (tr.isCorrectTriangle(a, b, c)) {
+				System.out.println("Треугольник со сторонами: " + a + ", " + b + ", " + c);
+				
+				int p = tr.trianglePerimeter(a, b, c);
+				System.out.println("Периметр треугольника = " + p);
+				
+				double s = tr.triangleSquare(a, b, c);
+				System.out.println("Площадь треугольника = " + s);
+			}
+				
 			else
 				System.out.println("Такого треугольника не существует");
 		}
