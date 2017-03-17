@@ -29,6 +29,11 @@ System.out.println("Введите целые числа");
 				
 				double s = tr.triangleSquare(a, b, c);
 				System.out.println("Площадь треугольника = " + s);
+				
+				if (tr.isRectTriangle(a, b, c) == true) 
+					System.out.println("Треугольник прямоугольный");
+				else 
+					System.out.println("Треугольник не прямоугольный");	
 			}
 				
 			else

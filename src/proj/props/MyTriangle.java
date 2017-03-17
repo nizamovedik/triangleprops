@@ -19,4 +19,13 @@ public class MyTriangle {
 		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
 	}
 
+	public boolean isRectTriangle(int a, int b, int c) {
+		
+		if ( Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2) || 
+				Math.pow(b, 2) + Math.pow(c, 2) == Math.pow(a, 2) || 
+				Math.pow(a, 2) + Math.pow(c, 2) == Math.pow(b, 2))
+			return true;
+		return false;
+	}
+
 }
