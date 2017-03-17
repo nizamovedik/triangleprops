@@ -2,7 +2,7 @@ package proj.start;
 
 import java.util.Scanner;
 
-import proj.props.IsPositiveSides;
+import proj.props.MyTriangle;
 
 public class Start {
 
@@ -19,8 +19,8 @@ System.out.println("Введите целые числа");
 			int	b = sc.nextInt();
 			int	c = sc.nextInt();
 			
-			IsPositiveSides isPosSides = new IsPositiveSides();
-			if (isPosSides.isTrue(a, b, c))
+			MyTriangle tr = new MyTriangle();
+			if (tr.isCorrectTriangle(a, b, c))
 				System.out.println("" + a + b + c);
 			else
 				System.out.println("Такого треугольника не существует");
