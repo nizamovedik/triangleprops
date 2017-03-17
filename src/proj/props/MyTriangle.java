@@ -1,5 +1,7 @@
 package proj.props;
 
+import java.text.DecimalFormat;
+
 public class MyTriangle {
 
 	public boolean isCorrectTriangle(int a, int b, int c) {
@@ -14,9 +16,10 @@ public class MyTriangle {
 		return a + b + c;
 	}
 	
-	public double triangleSquare (int a, int b, int c) {
+	public String triangleSquare (int a, int b, int c) {
+		DecimalFormat df = new DecimalFormat("#.##");
 		int p = trianglePerimeter(a, b, c); 
-		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+		return df.format( Math.sqrt(p * (p - a) * (p - b) * (p - c)) );
 	}
 
 	public boolean isRectTriangle(int a, int b, int c) {

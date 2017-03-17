@@ -10,10 +10,11 @@ public class Start {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-System.out.println("Введите целые числа");
+		
+		System.out.println("Введите целые числа");
 		
 		try {
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 			int	a = sc.nextInt();
 			int	b = sc.nextInt();
@@ -27,7 +28,7 @@ System.out.println("Введите целые числа");
 				int p = tr.trianglePerimeter(a, b, c);
 				System.out.println("Периметр треугольника = " + p);
 				
-				double s = tr.triangleSquare(a, b, c);
+				String s = tr.triangleSquare(a, b, c);
 				System.out.println("Площадь треугольника = " + s);
 				
 				if (tr.isRectTriangle(a, b, c) == true) 
