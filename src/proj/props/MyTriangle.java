@@ -28,4 +28,14 @@ public class MyTriangle {
 		return false;
 	}
 
+	public String isEquilateral(int a, int b, int c) {
+		
+		if ( a == b && b == c)
+			return "Треугольник равносторонний";
+		else if ( a == b || b == c || a == c)
+			return "Треугольник равнобедренный";
+		else
+			return "Треугольник разносторонний";
+	}
+
 }

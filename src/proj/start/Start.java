@@ -33,7 +33,10 @@ System.out.println("Введите целые числа");
 				if (tr.isRectTriangle(a, b, c) == true) 
 					System.out.println("Треугольник прямоугольный");
 				else 
-					System.out.println("Треугольник не прямоугольный");	
+					System.out.println("Треугольник не прямоугольный");
+				
+				System.out.println(tr.isEquilateral(a, b, c));
+				
 			}
 				
 			else
